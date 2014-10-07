@@ -14,6 +14,7 @@
 " -------------
 set nocompatible    " Use vim commands instead of `vi` commands
 syntax enable
+set clipboard=unnamed " Copy things to the OSX native clipboard!
 
 " Pathogen
 " Load plugins installed in  ~/.vim/bundle
