@@ -14,6 +14,8 @@ alias gi='git init'
 alias gmv='git mv'
 alias grbm='git rebase master'
 alias grbim='git rebase -i master'
+unalias gr
+alias gr='git remote -v'
 alias grm='git rm'
 alias gs='git stash'        # I prefer this to `gsta`
 alias gsp='git stash pop'   # and `gstp`
