@@ -2,6 +2,8 @@
 alias gaa='git add --all'
 alias gaac='git add --all && git commit -v'
 alias gap='git add -p'
+unalias gb
+alias gb='git branch -a -v'
 alias gbd='git branch -D'
 alias gcane='git commit --amend --no-edit'
 alias gcb='git checkout -b'
