@@ -37,40 +37,6 @@ v () {
   fi
 }
 
-# Start current project in Tomcat
-tc () {
-  for COLOR in RED GREEN YELLOW BLUE MAGENTA CYAN BLACK WHITE; do
-      eval $COLOR='$fg_no_bold[${(L)COLOR}]'
-      eval BOLD_$COLOR='$fg_bold[${(L)COLOR}]'
-  done
-  TOMCAT_PATH=/usr/local/Cellar/tomcat/5.5.36
-  echo "$(tput setf 3)*Unlinking previously launched apps*$(tput sgr0)"
-  find $TOMCAT_PATH/webapps -type l -print0 | xargs -0 rm -vf
-
-  echo "**Deleting stale session data**"
-  rm -Rf $TOMCAT_PATH/work/Catalina/localhost
-
-  echo "**Starting $(basename $PWD)**"
-  ln -s $PWD $TOMCAT_PATH/webapps/.
-  $TOMCAT_PATH/bin/catalina.sh run
-}
-
-# CLI for interacting with remote eXist databases
-exist () {
-  client='/Applications/eXist/bin/client.sh'
-  if [[ $# > 0 ]]
-  then
-    $client -s -ouri=xmldb:exist://$1:8080/exist/xmlrpc -u admin -P surfsup1 -T /tmp/eXist-db.log -ocolors=true
-  else
-    echo "usage: $0 <server-name>"
-    echo
-    echo "Our most commonly used eXist-db servers are:"
-    echo "   gsweblimintdevdb1   Internal Apps (development and staging)"
-    echo "   gsweblimintprddb1   Internal Apps (production)"
-    echo "   gsweblimpubprddb1   Public Apps (production)"
-  fi
-}
-
 # Productivity
 most-used() {
   if [[ $# > 0 ]]; then
