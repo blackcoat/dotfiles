@@ -27,6 +27,9 @@ alias gph='git push heroku master'
 alias hc='heroku config'
 alias hcs='heroku config:set'
 
+# Meteor
+alias ml='meteor list'
+
 # Node/NPM
 alias nd='npm run generate-docs'  #Hotham-specific
 alias nis='npm install --save'
