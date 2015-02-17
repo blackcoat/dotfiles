@@ -46,3 +46,5 @@ alias reload='source ~/.zshrc'
 
 # Misc.
 alias hs='http-server --cors'
+alias mine='java -d64 -jar /Applications/Minecraft.app/Contents/Resources/Java/Bootstrap.jar'
+
