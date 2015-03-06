@@ -9,6 +9,7 @@ alias bls='brew deps --tree --installed --1'
 
 # Meteor
 alias ml='meteor list'
+alias mm='meteor mongo'
 
 # Node/NPM
 alias nd='npm run generate-docs'  #Hotham-specific
