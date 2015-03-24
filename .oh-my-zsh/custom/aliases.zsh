@@ -22,6 +22,9 @@ alias gsp='git stash pop'   # and `gstp`
 alias gshow='git show'
 alias gw='git add --all . && git reset --hard HEAD'
 
+# Multigit + Git across multiple repos
+alias mgup='for d in */ ; do cd $d; git pull --rebase; popd; done'
+
 # Heroku
 alias gph='git push heroku master'
 alias hc='heroku config'
