@@ -33,6 +33,10 @@ alias gph='git push heroku master'
 alias hc='heroku config'
 alias hcs='heroku config:set'
 
+# Homebrew
+alias bo='brew outdated'
+alias bls='brew deps --tree --installed --1'
+
 # Meteor
 alias ml='meteor list'
 
