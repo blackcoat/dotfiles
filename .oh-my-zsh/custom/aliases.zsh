@@ -2,7 +2,7 @@
 alias gaa='git add --all'
 alias gaac='git add --all && git commit -v'
 alias gap='git add -p'
-unalias gb
+unalias gb 2>/dev/null
 alias gb='git branch -a -v'
 alias gbd='git branch -D'
 alias gcane='git commit --amend --no-edit'
@@ -15,9 +15,9 @@ alias gi='git init'
 alias gmv='git mv'
 alias grbm='git rebase master'
 alias grbim='git rebase -i master'
-unalias gr
+unalias gr 2>/dev/null
 alias gr='git remote -v'
-unalias grh
+unalias grh 2>/dev/null
 alias grh='git reset --hard' # I use this *far* more than `git reset HEAD`
 alias grm='git rm'
 alias gs='git stash'        # I prefer this to `gsta`
