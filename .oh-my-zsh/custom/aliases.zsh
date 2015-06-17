@@ -51,7 +51,7 @@ alias nup='npm update'
 
 # Shell
 alias agi='ag -i'
-alias ls='ls -AFG'
+alias ls='ls -AFG --color'
 alias reload='source ~/.zshrc'
 
 # Misc.
