@@ -13,7 +13,6 @@ f () { foreman ${@:-start} }
 #
 #
 # Ben Orenstein's implementation can be found in the Play by Play at 0:22:09.
-unalias g
 g () { git ${@:-status} }
 
 # The `a` command shows aliases, filtered for a specified pattern
