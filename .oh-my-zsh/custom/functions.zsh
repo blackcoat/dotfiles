@@ -5,16 +5,6 @@ chpwd() ls
 # defaulting to `foreman start`
 f () { foreman ${@:-start} }
 
-# The `g` command, as demonstrated in the Peepcode Play by Play with Ben Orenstein
-# https://peepcode.com/products/play-by-play-benorenstein
-#
-# This command aliases `g` to `git`, but goes the extra step of running `git status`
-# by default when no arguments are passed.
-#
-#
-# Ben Orenstein's implementation can be found in the Play by Play at 0:22:09.
-g () { git ${@:-status} }
-
 # The `a` command shows aliases, filtered for a specified pattern
 a () {
   if [[ $# > 0 ]]
@@ -71,4 +61,3 @@ timestamp() {
 make-ls() {
   make -qp | awk -F':' '/^[a-zA-Z0-9][^$#\/\t=]*:([^=]|$)/ {split($1,A,/ /);for(i in A)print A[i]}'     | sort
 }
-
