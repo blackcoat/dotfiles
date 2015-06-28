@@ -15,6 +15,18 @@ a () {
   fi
 }
 
+# The `m` command handles Meteor interaction
+# By default, run meteor with loaded settings
+# http://joshowens.me/environment-settings-and-security-with-meteor-js/
+m () {
+  if [[ $# > 0 ]]
+  then
+    meteor ${@}
+  else
+    meteor run --settings settings.json
+  fi
+}
+
 # The `v` command starts Vagrant and SSH's into the guest OS, or runs
 # an arbitrary command
 v () {
