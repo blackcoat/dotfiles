@@ -5,6 +5,7 @@ alias hcs='heroku config:set'
 
 # Homebrew
 alias bo='brew outdated'
+alias bl='brew leaves'
 alias bls='brew deps --tree --installed --1'
 
 # Meteor
