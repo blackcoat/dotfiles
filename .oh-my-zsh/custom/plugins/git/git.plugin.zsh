@@ -36,4 +36,4 @@ alias gshow='git show'
 alias gw='git add --all . && git reset --hard HEAD'
 
 # Multigit + Git across multiple repos
-alias mgup='for d in */ ; do cd $d; git pull --rebase; popd; done'
+alias mgup='for d in */ ; do cd $d; git pull --rebase --recurse-submodules; popd; done'
