@@ -2,6 +2,7 @@
 alias gph='git push heroku master'
 alias hc='heroku config'
 alias hcs='heroku config:set'
+alias hl='heroku local'
 
 # Homebrew
 alias bo='brew outdated'

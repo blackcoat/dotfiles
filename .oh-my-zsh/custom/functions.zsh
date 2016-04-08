@@ -5,6 +5,9 @@ chpwd() ls
 # defaulting to `foreman start`
 f () { foreman ${@:-start} }
 
+# The `h` command for quickly using the Heroku CLI
+h () { heroku ${@} }
+
 # The `a` command shows aliases, filtered for a specified pattern
 a () {
   if [[ $# > 0 ]]
