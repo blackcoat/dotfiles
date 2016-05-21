@@ -33,6 +33,8 @@ alias grm='git rm'
 alias gs='git stash'        # I prefer this to `gsta`
 alias gsp='git stash pop'   # and `gstp`
 alias gshow='git show'
+unalias gup 2>/dev/null
+alias gup='git pull --rebase && git submodule update --rebase'
 alias gw='git add --all . && git reset --hard HEAD'
 
 # Multigit + Git across multiple repos
